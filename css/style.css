@@ -1,3 +1,325 @@
 body {
-  background-color: red;
+  background: #000;
+  color: #fff;
+
+}
+.main-width {
+  width: 900px;
+  margin: auto;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+  text-transform: uppercase;
+  margin: 0 50px;
+}
+.logo {
+
+}
+.logo__on, .slider__header {
+  color: orange;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  position: relative;
+}
+.about__menu {
+  position: absolute;
+  border: 1px solid white;
+  top: 30px;
+  background: black;
+}
+.about__menu:before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+}
+.about__menu--list {
+  list-style: none;
+  padding: 0 10px;
+
+}
+.about__menu--list-link {
+  padding: 5px;
+}
+
+.slider {
+  box-sizing: border-box;
+  background: linear-gradient(#fff 80%, silver);
+  color: black;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+
+}
+.slider__leftpan--two {
+  background-image: url(../images/black_chair.png);
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid black; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -50px;
+
+}
+.slider__leftpan--one, .slider__rightpan--one {
+  font-size: 70px;
+  color: orange;
+  width: 10%;
+  text-align: center;
+}
+.slider__rightpan--two {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+
+}
+.slider__text {
+  text-align: center;
+  padding: 10px 0;
+}
+.slider__button {
+  width: 150px;
+  height: 40px;
+  background: orange;
+  border-radius: 5px;
+  color: white;
+  top:20px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__rightpan--two h1, .slider__button {
+  text-transform: uppercase;
+}
+
+.below-slider {
+  box-sizing: border-box;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px 50px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.chair__Clair, .chair__Margarita {
+  width: 250px;
+  height: 150px;
+  border: 1px solid grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.findInputs {
+  width: 250px;
+  height: 170px;
+  border: 1px solid grey;
+}
+.chair__Clair {
+  background-image: url(../images/box1_img.jpg);
+}
+.chair__Margarita {
+  background-image: url(../images/box2_img.jpg);
+}
+.box__belt {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 22px;
+  position: relative;
+  top: 100px;
+  padding: 10px;
+
+}
+.underline {
+  height: 5px;
+  width: 40%;
+  background: orange;
+}
+.findInputs {
+  box-sizing: border-box;
+  color: black;
+  padding: 20px 10px;
+}
+.findInputs__header {
+
+}
+.findInputs__text {
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.price-list {
+  background: #eee;
+  width: 100%;
+  height:550px;
+
+  padding: 40px;
+  box-sizing: border-box;
+}
+.price-list__pans {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
+}
+.price-list__plans--basic, .price-list__plans--standard, .price-list__plans--advance {
+  box-sizing: border-box;
+  width: 31%;
+  height: 360px;
+  border: 1px solid black;
+  color: grey;
+
+
+}
+
+.plans__header {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  top: -25px;
+  text-align: center;
+}
+.plans__price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:90px;
+  height: 90px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  left: 80px;
+  background: #fff;
+  /* text-align: center; */
+
+
+}
+.plans__price--sum {
+  font-size: 30px;
+  top: 5px;
+  position: relative;
+  top: 10px;
+
+}
+.plans__price--units {
+  font-size: 12px;
+
+}
+.plans__conditions {
+  width: 100%;
+
+}
+.plans__price--list {
+  width: auto;
+  list-style: none;
+  background: lightgrey;
+  text-align: center;
+  padding: 0;
+}
+.plans__price--list li {
+    padding: 5px 0;
+}
+.plans__price--list li:nth-child(2n) {
+  width: auto;
+  background: darkgrey;
+
+}
+.plans__button {
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+  left: 80px;
+  color: white;
+  /* text-align: center; */
+
+}
+.price-list__plans--basic::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -30px;
+  left: 105px;
+  background: #fff;
+}
+.price-list__plans--basic::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -294px;
+  left: 116px;
+  background: #bbb;
+}
+.price-list__plans--standard::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -30px;
+  left: 105px;
+  background: #fff;
+}
+.price-list__plans--standard::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -324px;
+  left: 116px;
+  background: #bbb;
+}
+.price-list__plans--advance::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -30px;
+  left: 105px;
+  background: #fff;
+}
+.price-list__plans--advance::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  top: -350px;
+  left: 116px;
+  background: #bbb;
 }
